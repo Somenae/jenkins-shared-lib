@@ -1,8 +1,14 @@
 pipeline {
     agent any
+    
+    triggers {
+        githubPush()
+    }
+
     parameters {
         choice(name: 'env', choices: ['dev', 'prod'], description: 'Select environment')
     }
+
     stages {
         stage('Determine Environment') {
             steps {
