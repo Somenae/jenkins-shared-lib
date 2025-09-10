@@ -1,2 +1,2 @@
 # jenkins-shared-lib
-jhgoima oimerth
+jhgoima oimerthe
